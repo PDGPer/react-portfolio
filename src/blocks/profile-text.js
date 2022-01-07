@@ -1,0 +1,62 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+
+export const ProfileText = () => {
+  return (
+    <div>
+      <p className='text'>
+        const details = {'{'} 
+        <br></br>
+        &nbsp;&nbsp;name: 'Pedro Pereira',
+        <br></br>
+        &nbsp;&nbsp;role: 'Frontend Developer',
+        <br></br>
+        &nbsp;&nbsp;location: 'York, UK',
+        <br></br>
+        &nbsp;&nbsp;languages: [ EN, PT, ES]
+        <br></br>
+        {'}'}
+        <br></br>
+        <br></br>
+        <a href='https://github.com/PDGPer' target='_blank' rel='noreferrer'>// [github ↗]</a>
+        <br></br>
+        <a href='https://www.linkedin.com/in/pdgper/' target='_blank' rel='noreferrer'>// [linkedin ↗]</a>
+        <br></br>
+        <a href='mailto:pdgper@gmail.com'>// [email ✉]</a>
+
+      </p>
+    </div>
+  )
+}
+
+export const profileTextString = (
+  "<div class='code-container'>" +
+  "<pre>" +
+  "<code class='code'>" +
+  "const ProfileText = () =〉 {" +
+  "<br>" +
+  "&nbsp;&nbsp;" +
+  "return (" +
+  "<br>" +
+  "&nbsp;&nbsp;&nbsp;&nbsp;" +
+  "〈div〉" +
+  "<br>" +
+  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+  "〈p className='text'〉" +
+  "<br>" +
+  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+  "{profileObject}" +
+  "<br>" +
+  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+  "〈/p〉" +
+  "<br>" +
+  "&nbsp;&nbsp;&nbsp;&nbsp;" +
+  "〈/div〉" +
+  "<br>" +
+  "&nbsp;&nbsp;" +
+  ")" +
+  "<br>" +
+  "}" +
+  "</code>" +
+  "</pre>" +
+  "</div>"
+)
