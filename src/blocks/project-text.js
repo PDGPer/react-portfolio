@@ -3,10 +3,9 @@ export const ProjectText = () => {
   return (
     <div>
       <p className='text'>
-        const latestProject = 
+        <span className='code-purple'>const latestProject</span> = 
         <br></br>
         'A roguelike built with React and CSS only. Per self-imposed challenge, the terrain, enemy placement and item drops are all randomized. No external graphical assets — I wanted to avoid using my old tools.'
-        <br></br>
         <br></br>
         <a href='https://roguelike.vercel.app/' target='_blank' rel='noreferrer'>// [play ↗]</a>
         <br></br>

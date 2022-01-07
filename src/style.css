@@ -1,5 +1,9 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: none;
+}
+
 html {
   font-size: 10px;
 }
@@ -8,7 +12,6 @@ body {
   margin: 0;
   background-color: #1b2225;
   opacity: 1;
-  /* background: repeating-linear-gradient( -45deg, #383838, #383838 10.5px, #1b2225 10.5px, #1b2225 52.5px ); */
 }
 
 pre {
@@ -59,10 +62,14 @@ a:hover {
 
 .text {
   font-family: Consolas, Menlo, Monaco, 'Droid Sans Mono', monospace;
-  margin: 3vw;
+  margin: 7%;
   font-size: 5vw;
   line-height: 9vw;
   color: #cbd3de;
+}
+
+.max-width {
+  width: 100%;
 }
 
 @media only screen and (min-width:700px) { 

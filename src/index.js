@@ -9,6 +9,7 @@ import { ProjectPic, projectPicString } from './blocks/project-pic'
 import { ProjectText, projectTextString } from './blocks/project-text'
 import { ExperiencePic, experiencePicString } from './blocks/experience-pic'
 import { ExperienceText, experienceTextString } from './blocks/experience-text'
+import { Links, linksString } from './blocks/links'
 import './style.css';
 
 const App = () => {
@@ -55,6 +56,11 @@ const App = () => {
   const [isExperienceTextDone, setExperienceTextStatus] = useState(false)
   function toggleExperienceTextStatus() {
     setExperienceTextStatus(true)
+  }
+
+  const [isLinksDone, setLinksStatus] = useState(false)
+  function toggleLinksStatus() {
+    setLinksStatus(true)
   }
 
   return (
@@ -160,6 +166,17 @@ const App = () => {
               }
           </div>
 
+        </div>
+
+        {/* LINKS SECTION */}
+        <div className='row-container'>
+          {isLinksDone ? 
+              <Links/> : 
+              <Code
+                codeString={linksString}
+                stateToggleFunction={toggleLinksStatus}
+              />
+            }
         </div>
 
 

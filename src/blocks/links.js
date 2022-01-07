@@ -1,25 +1,24 @@
-export const ExperienceText = () => {
+/* eslint-disable react/jsx-no-comment-textnodes */
+import cvPdf from '../files/CV - Pedro Pereira.pdf'
+
+export const Links = () => {
   return (
     <div>
-      <p className='text'>
-        <span className='code-purple'>const legacyKnowledge</span> = 
-        <br></br>
-        [ 'Premiere', 'AfterEffects', 'Photoshop', 'Illustrator', 'Wordpress' ]
-        <br></br>
-        <br></br>
-        <span className='code-purple'>const pastLife</span> =
-        <br></br>
-        'I did a lot of graphical work before moving to code. I am comfortable around design, illustration, video and other similar matters.'
+      <p className='text max-width'>
+        <a href='https://github.com/PDGPer' target='_blank' rel='noreferrer'>// [github&nbsp;↗] </a>
+        <a href='https://www.linkedin.com/in/pdgper/' target='_blank' rel='noreferrer'> [linkedin&nbsp;↗] </a>
+        <a href='mailto:pdgper@gmail.com'> [email&nbsp;✉] </a>
+        <a href={cvPdf} download> [CV&nbsp;↓]</a>
       </p>
     </div>
   )
 }
 
-export const experienceTextString = (
+export const linksString = (
   "<div class='code-container'>" +
   "<pre>" +
   "<code class='code'>" +
-  "const LegacyText = () =〉 {" +
+  "const Links = () =〉 {" +
   "<br>" +
   "&nbsp;&nbsp;" +
   "return (" +
@@ -31,7 +30,7 @@ export const experienceTextString = (
   "〈p className='text'〉" +
   "<br>" +
   "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
-  "{legacyArray}" +
+  "{linkList}" +
   "<br>" +
   "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
   "〈/p〉" +

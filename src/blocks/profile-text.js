@@ -1,10 +1,11 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
+import cvPdf from '../files/CV - Pedro Pereira.pdf'
 
 export const ProfileText = () => {
   return (
     <div>
       <p className='text'>
-        const details = {'{'} 
+        <span className='code-purple'>const details</span> = {'{'} 
         <br></br>
         &nbsp;&nbsp;name: 'Pedro Pereira',
         <br></br>
@@ -16,13 +17,13 @@ export const ProfileText = () => {
         <br></br>
         {'}'}
         <br></br>
-        <br></br>
         <a href='https://github.com/PDGPer' target='_blank' rel='noreferrer'>// [github ↗]</a>
         <br></br>
         <a href='https://www.linkedin.com/in/pdgper/' target='_blank' rel='noreferrer'>// [linkedin ↗]</a>
         <br></br>
         <a href='mailto:pdgper@gmail.com'>// [email ✉]</a>
-
+        <br></br>
+        <a href={cvPdf} download>// [CV ↓]</a>
       </p>
     </div>
   )

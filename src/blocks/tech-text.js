@@ -3,12 +3,12 @@ export const TechText = () => {
   return (
     <div>
       <p className='text'>
-        const knowTechs =
+        <span className='code-purple'>const knowTechs</span> =
         <br></br>
         [ 'HTML5', 'CSS3', 'JavaScript', 'React', 'Bootstrap' ]
         <br></br>
         <br></br>
-        const recentWork = 
+        <span className='code-purple'>const recentWork</span> = 
         <br></br>
         'A bilingual Wordpress site for an academic project using Bootstrap to theme. Also responsible for the graphichs and design.'
         <br></br>
