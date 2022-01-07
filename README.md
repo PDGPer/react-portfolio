@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# Personal portfolio made in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Goals
+My previous portfolio was made when I had less code skills and was leaning more on my image and video knowledge. I liked the end result but it was way too heavy in terms  of all the files it used. This time I wanted to make the portfolio as lean as possible and focus more on code.
 
-## Available Scripts
+### Design
+I tried to keep two principles in mind: "show, don't tell" and "know your audience". I assumed that the people who will be looking at a coder portfolio will know something of code themselves, so why not have some fun with that and show skills at the same time.
+- The color scheme is based on my VSCode color scheme.
+- The fonts are monospace fonts regularly used to display code.
+- When the site is initially loaded, you actually see the code that corresponds to each block being "written" with the help of an NPM module. This brings the code that usually stays in the background to the foreground with a fun little effect.
+- The text information is displayed in the form of variables holding objects, arrays, strings, etc. and the links as comments, once again bringing the background to the foreground.
 
-In the project directory, you can run:
+### Making a leaner site
+A lot of stuff was cut from my previous site that no longer had any reason to be present (no more video, for example), but I still wanted to explore more options in terms of reducing file sizes for images.
+- Using SVGs instead of PNGs for flat color images like the portrait and the logos reduced their file size by 10x. Their code was assigned directly to variables in a SVG library, saving me the fuss of having multiple files in a folder. After deleting further useless code from these, the final JS file with all the images was 2/3 the size of all the individual files put together: 17.5kb.
+- I looked into newer image formats to replace JPGs and after settling on AVIF, the file size was cut down to around 30% of an equivalent JPG file with the same compression level. In total and excluding the GIF, bitmap images use only 101kb.
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The build version of the site is 991kb in total.
