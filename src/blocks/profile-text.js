@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import cvPdf from '../files/CV - Pedro Pereira.pdf'
 
+// There are always just regular JSX content or a piece of media.
 export const ProfileText = () => {
   return (
     <div>
@@ -29,6 +30,8 @@ export const ProfileText = () => {
   )
 }
 
+// A string for the typewriter effect. Pseudo-JSX, actually
+// just HTML formatted to look like code.
 export const profileTextString = (
   "<div class='code-container'>" +
   "<pre>" +

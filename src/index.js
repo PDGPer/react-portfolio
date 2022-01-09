@@ -1,7 +1,14 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
+// The Code component holds the typewriter effect and inputs
+// for the string to display and state to toggle.
 import { Code } from './shared'
+// Each component from the block folder holds the code
+// for the typewriter string and the content to replace it
+// for one single block.
 import { ProfilePic, profilePicString } from './blocks/profile-pic'
+// I've only added comments to the profile-text block.
+// All others function similarly.
 import { ProfileText, profileTextString } from './blocks/profile-text'
 import { TechLogos, techLogosString } from './blocks/tech-logos'
 import { TechText, techString } from './blocks/tech-text'
@@ -14,7 +21,9 @@ import './style.css';
 
 const App = () => {
 
-  // PROFILE
+  // PROFILE BLOCKS STATE
+  // State is used to keep track of when the typewriter effect ends
+  // so it can be replaced with the respective content block.
   const [isProfilePicDone, setProfilePicStatus] = useState(false)
   function toggleProfilePicStatus() {
     setProfilePicStatus(true)
@@ -25,7 +34,7 @@ const App = () => {
     setProfileTextStatus(true)
   }
 
-  // TECH STACK
+  // TECH STACK BLOCKS STATE
   const [isTechLogosDone, setTechLogosStatus] = useState(false)
   function toggleTechLogosStatus() {
     setTechLogosStatus(true)
@@ -36,7 +45,7 @@ const App = () => {
     setTechTextStatus(true)
   }
 
-  // PROJECT
+  // PROJECT BLOCKS STATE
   const [isProjectPicDone, setProjectPicStatus] = useState(false)
   function toggleProjectPicStatus() {
     setProjectPicStatus(true)
@@ -47,7 +56,7 @@ const App = () => {
     setProjectTextStatus(true)
   }
 
-  // EXPERIENCE
+  // EXPERIENCE BLOCKS STATE
   const [isExperiencePicDone, setExperiencePicStatus] = useState(false)
   function toggleExperiencePicStatus() {
     setExperiencePicStatus(true)
@@ -58,6 +67,7 @@ const App = () => {
     setExperienceTextStatus(true)
   }
 
+  // FOOTER LINKS STATE
   const [isLinksDone, setLinksStatus] = useState(false)
   function toggleLinksStatus() {
     setLinksStatus(true)
@@ -69,13 +79,19 @@ const App = () => {
       <div className='main-column-container'>
 
         {/* PROFILE SECTION */}
+        {/*The row container holds two content blocks.
+        Every other row, the block order is reversed for desktop displays. */}
         <div className='row-container'>
 
+          {/* If the typewriter effect is done in state, replaces it with content. */}
           <div className={isProfilePicDone? 'block' : 'block dark-background'}>
             {isProfilePicDone ? 
               <ProfilePic/> : 
+              // Code component for the typewritter effect is DRY, 
+              // so it only needs a different string each time.
               <Code
                 codeString={profilePicString}
+                // Along with a different call to toggle state.
                 stateToggleFunction={toggleProfilePicStatus}
               />
             }

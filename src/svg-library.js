@@ -1,3 +1,5 @@
+// Components holding the svg code for different logos and an illustration.
+
 export const HTML5Logo = () => {
   return (
     <svg 
