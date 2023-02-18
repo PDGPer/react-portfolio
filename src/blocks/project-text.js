@@ -24,7 +24,7 @@ export const ProjectText = () => {
         <br></br>
         <br></br>
         <span className="code-purple">const soloWork</span> =<br></br>
-        'Or check some of my most recent solo work (code & design).'
+        'Or check some of my solo work (code & design).'
         <br></br>
         <a href="https://justfutures.pt" target="_blank" rel="noreferrer">
           // [justfutures ↗]
