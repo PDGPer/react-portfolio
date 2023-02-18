@@ -2,23 +2,20 @@
 export const TechText = () => {
   return (
     <div>
-      <p className='text'>
-        <span className='code-purple'>const knowTechs</span> =
+      <p className="text">
+        <span className="code-purple">const knowTechs</span> =<br></br>[
+        'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Redux',
+        'Redux-Saga', 'REST', 'Azure', 'Git', 'NPM', Yarn 'Material UI', 'Styled
+        Components', ...etc ]<br></br>
         <br></br>
-        [ 'HTML5', 'CSS3', 'JavaScript', 'React', 'Bootstrap' ]
-        <br></br>
-        <br></br>
-        <span className='code-purple'>const recentWork</span> = 
-        <br></br>
-        'A bilingual Wordpress site for an academic project using Bootstrap to theme. Also responsible for the graphichs and design.'
-        <br></br>
-        <a href='https://justfutures.pt' target='_blank' rel='noreferrer'>// [justfutures ↗]</a>
+        <span className="code-purple">const latestRole</span> =<br></br>
+        'Building the frontend for energy management systems at Eaton.'
       </p>
     </div>
-  )
-}
+  );
+};
 
-export const techString = (
+export const techString =
   "<div class='code-container'>" +
   "<pre>" +
   "<code class='code'>" +
@@ -48,5 +45,4 @@ export const techString = (
   "}" +
   "</code>" +
   "</pre>" +
-  "</div>"
-)
+  "</div>";
