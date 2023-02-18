@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import cvPdf from '../files/CV - Pedro Pereira.pdf'
+import cvPdf from "../files/CV - Pedro Pereira.pdf";
 
 // There are always just regular JSX content or a piece of media.
 export const ProfileText = () => {
   return (
     <div>
-      <p className='text'>
-        <span className='code-purple'>const details</span> = {'{'} 
+      <p className="text">
+        <span className="code-purple">const details</span> = {"{"}
         <br></br>
         &nbsp;&nbsp;name: 'Pedro Pereira',
         <br></br>
@@ -14,25 +14,34 @@ export const ProfileText = () => {
         <br></br>
         &nbsp;&nbsp;location: 'York, UK',
         <br></br>
-        &nbsp;&nbsp;languages: [ EN, PT, ES]
+        &nbsp;&nbsp;languages: [ EN, PT, ES ]<br></br>
+        {"}"}
         <br></br>
-        {'}'}
+        <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
+          // [github ↗]
+        </a>
         <br></br>
-        <a href='https://github.com/PDGPer' target='_blank' rel='noreferrer'>// [github ↗]</a>
+        <a
+          href="https://www.linkedin.com/in/pdgper/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          // [linkedin ↗]
+        </a>
         <br></br>
-        <a href='https://www.linkedin.com/in/pdgper/' target='_blank' rel='noreferrer'>// [linkedin ↗]</a>
+        <a href="mailto:pdgper@gmail.com">// [email ✉]</a>
         <br></br>
-        <a href='mailto:pdgper@gmail.com'>// [email ✉]</a>
-        <br></br>
-        <a href={cvPdf} download>// [CV ↓]</a>
+        <a href={cvPdf} download>
+          // [CV ↓]
+        </a>
       </p>
     </div>
-  )
-}
+  );
+};
 
 // A string for the typewriter effect. Pseudo-JSX, actually
 // just HTML formatted to look like code.
-export const profileTextString = (
+export const profileTextString =
   "<div class='code-container'>" +
   "<pre>" +
   "<code class='code'>" +
@@ -62,5 +71,4 @@ export const profileTextString = (
   "}" +
   "</code>" +
   "</pre>" +
-  "</div>"
-)
+  "</div>";
