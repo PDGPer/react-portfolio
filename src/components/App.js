@@ -22,56 +22,59 @@ import {
   experienceTextString,
 } from "./homePageContent/ExperienceText";
 import { Links, linksString } from "./Links";
+import { codeWriterStatus } from "../config";
 
 const App = () => {
   // PROFILE BLOCKS STATE
   // State is used to keep track of when the typewriter effect ends
   // so it can be replaced with the respective content block.
-  const [isProfilePicDone, setProfilePicStatus] = useState(false);
+  const [isProfilePicDone, setProfilePicStatus] = useState(codeWriterStatus);
   function toggleProfilePicStatus() {
     setProfilePicStatus(true);
   }
 
-  const [isProfileTextDone, setProfileTextStatus] = useState(false);
+  const [isProfileTextDone, setProfileTextStatus] = useState(codeWriterStatus);
   function toggleProfileTextStatus() {
     setProfileTextStatus(true);
   }
 
   // TECH STACK BLOCKS STATE
-  const [isTechPicDone, setTechPicStatus] = useState(false);
+  const [isTechPicDone, setTechPicStatus] = useState(codeWriterStatus);
   function toggleTechPicStatus() {
     setTechPicStatus(true);
   }
 
-  const [isTechTextDone, setTechTextStatus] = useState(false);
+  const [isTechTextDone, setTechTextStatus] = useState(codeWriterStatus);
   function toggleTechTextStatus() {
     setTechTextStatus(true);
   }
 
   // PROJECT BLOCKS STATE
-  const [isProjectPicDone, setProjectPicStatus] = useState(false);
+  const [isProjectPicDone, setProjectPicStatus] = useState(codeWriterStatus);
   function toggleProjectPicStatus() {
     setProjectPicStatus(true);
   }
 
-  const [isProjectTextDone, setProjectTextStatus] = useState(false);
+  const [isProjectTextDone, setProjectTextStatus] = useState(codeWriterStatus);
   function toggleProjectTextStatus() {
     setProjectTextStatus(true);
   }
 
   // EXPERIENCE BLOCKS STATE
-  const [isExperiencePicDone, setExperiencePicStatus] = useState(false);
+  const [isExperiencePicDone, setExperiencePicStatus] =
+    useState(codeWriterStatus);
   function toggleExperiencePicStatus() {
     setExperiencePicStatus(true);
   }
 
-  const [isExperienceTextDone, setExperienceTextStatus] = useState(false);
+  const [isExperienceTextDone, setExperienceTextStatus] =
+    useState(codeWriterStatus);
   function toggleExperienceTextStatus() {
     setExperienceTextStatus(true);
   }
 
   // FOOTER LINKS STATE
-  const [isLinksDone, setLinksStatus] = useState(false);
+  const [isLinksDone, setLinksStatus] = useState(codeWriterStatus);
   function toggleLinksStatus() {
     setLinksStatus(true);
   }

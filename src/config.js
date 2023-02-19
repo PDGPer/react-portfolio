@@ -1,5 +1,7 @@
 // Used by every CodeWriter component to determine how long
-// to keep the typewriter effect on screen and...
+// to keep the typewriter effect onscreen.
 export const delayBeforeSwap = 500;
-// ...the dealy between each character being "typed".
+// Delay between each character being "typed" in the CodeWriter component.
 export const delayBetweenTyping = 30;
+// Toggle CodeWriter on and off.
+export const codeWriterStatus = true;

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
   HTML5Logo,
   CSS3Logo,
@@ -6,18 +7,39 @@ import {
   BootstrapLogo,
 } from "../../imgs/svgLibrary";
 
+const logos = [HTML5Logo, CSS3Logo, JavaScriptLogo, ReactLogo, BootstrapLogo];
+
+const colors = [
+  "#cf92c3",
+  "#cbd3de",
+  "#8ac897",
+  "#f9d618",
+  "#4f9bcc",
+  "#ff8b4d",
+];
+
+const pickRandom = (array) => {
+  return array[Math.floor(Math.random() * array.length)];
+};
+
 export const TechPic = () => {
+  const [currentLogo, setCurrentLogo] = useState(pickRandom(logos));
+  const [currentColor, setCurrentColor] = useState(pickRandom(colors));
+  const changeLogoAndColor = () => {
+    setCurrentLogo(pickRandom(logos));
+    setCurrentColor(pickRandom(colors));
+  };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      changeLogoAndColor();
+    }, 200);
+    return () => clearTimeout(timeout);
+  }, [currentLogo]);
+
   return (
-    <div className="logo-container">
-      <div className="logo-row">
-        <HTML5Logo />
-        <CSS3Logo />
-      </div>
-      <div className="logo-row">
-        <JavaScriptLogo />
-        <ReactLogo />
-        <BootstrapLogo />
-      </div>
+    <div className="logo-container" style={{ backgroundColor: currentColor }}>
+      {currentLogo}
     </div>
   );
 };
