@@ -1,5 +1,5 @@
 import ImageGallery from "react-image-gallery";
-import slideshow1 from "../../imgs/slideshow-2.avif";
+import slideshow1 from "../../imgs/slideshow-1.avif";
 import slideshow2 from "../../imgs/slideshow-2.avif";
 import slideshow3 from "../../imgs/slideshow-3.avif";
 import slideshow4 from "../../imgs/slideshow-4.avif";
