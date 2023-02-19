@@ -1,22 +1,8 @@
 import { useState, useEffect } from "react";
-import {
-  HTML5Logo,
-  CSS3Logo,
-  JavaScriptLogo,
-  ReactLogo,
-  BootstrapLogo,
-} from "../../imgs/svgLibrary";
+import logos from "../../imgs/svgLibrary";
+import { delayBetweenLogos } from "../../config";
 
-const logos = [HTML5Logo, CSS3Logo, JavaScriptLogo, ReactLogo, BootstrapLogo];
-
-const colors = [
-  "#cf92c3",
-  "#cbd3de",
-  "#8ac897",
-  "#f9d618",
-  "#4f9bcc",
-  "#ff8b4d",
-];
+const colors = ["#cf92c3", "#8ac897", "#ffe96a", "#d5eeff", "#f89e6d"];
 
 const pickRandom = (array) => {
   return array[Math.floor(Math.random() * array.length)];
@@ -33,7 +19,7 @@ export const TechPic = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       changeLogoAndColor();
-    }, 200);
+    }, delayBetweenLogos);
     return () => clearTimeout(timeout);
   }, [currentLogo]);
 

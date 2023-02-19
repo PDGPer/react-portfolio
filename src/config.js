@@ -5,3 +5,5 @@ export const delayBeforeSwap = 500;
 export const delayBetweenTyping = 30;
 // Toggle CodeWriter on and off.
 export const codeWriterStatus = true;
+// Delay between logo change in TechPic component.
+export const delayBetweenLogos = 500;

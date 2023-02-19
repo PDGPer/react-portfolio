@@ -5,8 +5,8 @@ export const TechText = () => {
       <p className="text">
         <span className="code-purple">const knownTechs</span> =<br></br>[
         'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Redux',
-        'Redux-Saga', 'REST', 'Azure', 'Git', 'NPM', Yarn 'Material UI', 'Styled
-        Components', ...etc ]<br></br>
+        'Redux-Saga', 'REST', 'Azure DevOps', 'Git', 'NPM', Yarn, 'Material UI',
+        ...others ]<br></br>
         <br></br>
         <span className="code-purple">const latestRole</span> =<br></br>
         'Building the frontend for energy management systems at{" "}
