@@ -116,7 +116,7 @@ const App = () => {
           </div>
         </div>
 
-        {/* KNOW TECHS SECTION */}
+        {/* KNOWN TECHS SECTION */}
         <div className="row-container row-container-reverse">
           <div
             className={
