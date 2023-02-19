@@ -1,4 +1,4 @@
-import { Portrait } from "../svg-library";
+import { Portrait } from "../../imgs/svgLibrary";
 
 export const ProfilePic = () => {
   return <Portrait />;

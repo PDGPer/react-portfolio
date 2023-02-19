@@ -1,27 +1,23 @@
-import ImageGallery from 'react-image-gallery'
-import slideshow1 from '../img/slideshow-1.avif'
-import slideshow2 from '../img/slideshow-2.avif'
-import slideshow3 from '../img/slideshow-3.avif'
-import slideshow4 from '../img/slideshow-4.avif'
+import ImageGallery from "react-image-gallery";
+import slideshow1 from "../../imgs/slideshow-2.avif";
+import slideshow2 from "../../imgs/slideshow-2.avif";
+import slideshow3 from "../../imgs/slideshow-3.avif";
+import slideshow4 from "../../imgs/slideshow-4.avif";
 
 const images = [
   { original: slideshow1 },
   { original: slideshow2 },
   { original: slideshow3 },
-  { original: slideshow4 }
-]
+  { original: slideshow4 },
+];
 
 export const ExperiencePic = () => {
   return (
-    <ImageGallery 
-      items={images} 
-      showFullscreenButton={false}
-      autoPlay={true}
-    />
-  )
-}
+    <ImageGallery items={images} showFullscreenButton={false} autoPlay={true} />
+  );
+};
 
-export const experiencePicString = (
+export const experiencePicString =
   "<div class='code-container'>" +
   "<pre>" +
   "<code class='code'>" +
@@ -51,5 +47,4 @@ export const experiencePicString = (
   "}" +
   "</code>" +
   "</pre>" +
-  "</div>"
-)
+  "</div>";

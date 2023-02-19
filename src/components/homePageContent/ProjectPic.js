@@ -1,14 +1,14 @@
-import roguelikeGIF from '../img/roguelike.gif'
+import roguelikeGIF from "../../imgs/roguelike.gif";
 
 export const ProjectPic = () => {
   return (
     <div>
-      <img src={roguelikeGIF} alt='Animation of roguelike gameplay'></img>
+      <img src={roguelikeGIF} alt="Animation of roguelike gameplay"></img>
     </div>
-  )
-}
+  );
+};
 
-export const projectPicString = (
+export const projectPicString =
   "<div class='code-container'>" +
   "<pre>" +
   "<code class='code'>" +
@@ -32,5 +32,4 @@ export const projectPicString = (
   "}" +
   "</code>" +
   "</pre>" +
-  "</div>"
-)
+  "</div>";

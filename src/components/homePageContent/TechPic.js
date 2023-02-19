@@ -4,9 +4,9 @@ import {
   JavaScriptLogo,
   ReactLogo,
   BootstrapLogo,
-} from "../svg-library";
+} from "../../imgs/svgLibrary";
 
-export const TechLogos = () => {
+export const TechPic = () => {
   return (
     <div className="logo-container">
       <div className="logo-row">
@@ -22,11 +22,11 @@ export const TechLogos = () => {
   );
 };
 
-export const techLogosString =
+export const techPicString =
   "<div class='code-container'>" +
   "<pre>" +
   "<code class='code'>" +
-  "const TechLogos = () =〉 {" +
+  "const TechPic = () =〉 {" +
   "<br>" +
   "&nbsp;&nbsp;" +
   "return (" +

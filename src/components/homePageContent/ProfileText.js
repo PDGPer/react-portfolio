@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import cvPdf from "../files/CV - Pedro Pereira.pdf";
+import cvPdf from "../../files/CV - Pedro Pereira.pdf";
 
-// There are always just regular JSX content or a piece of media.
+// These are always just regular JSX content or a piece of media.
 export const ProfileText = () => {
   return (
     <div>

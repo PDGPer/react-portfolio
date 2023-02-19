@@ -9,7 +9,11 @@ export const TechText = () => {
         Components', ...etc ]<br></br>
         <br></br>
         <span className="code-purple">const latestRole</span> =<br></br>
-        'Building the frontend for energy management systems at Eaton.'
+        'Building the frontend for energy management systems at{" "}
+        <a href="https://www.eaton.com/" target="_blank" rel="noreferrer">
+          [Eaton&nbsp;↗]
+        </a>
+        .'
       </p>
     </div>
   );
