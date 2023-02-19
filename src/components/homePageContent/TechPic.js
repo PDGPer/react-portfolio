@@ -9,6 +9,8 @@ const pickRandom = (array) => {
 };
 
 export const TechPic = () => {
+  // A single logo and color are held in state, randomly picked from
+  // their respective arrays.
   const [currentLogo, setCurrentLogo] = useState(pickRandom(logos));
   const [currentColor, setCurrentColor] = useState(pickRandom(colors));
   const changeLogoAndColor = () => {
@@ -16,6 +18,8 @@ export const TechPic = () => {
     setCurrentColor(pickRandom(colors));
   };
 
+  // Every x interval the useEffect set a new logo and color in state,
+  // again randomly picked.
   useEffect(() => {
     const timeout = setTimeout(() => {
       changeLogoAndColor();
