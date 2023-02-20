@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./components/App";
+import Home from "./components/Home";
 import "./style.css";
 
 // React boilerplate
@@ -12,7 +12,7 @@ const root = createRoot(container);
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
     errorElement: <div>You're lost, feller.</div>,
   },
 ]);

@@ -24,7 +24,7 @@ import {
 import { Links, linksString } from "./Links";
 import { codeWriterStatus } from "../config";
 
-const App = () => {
+const Home = () => {
   // PROFILE BLOCKS STATE
   // State is used to keep track of when the typewriter effect ends
   // so it can be replaced with the respective content block.
@@ -244,4 +244,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
