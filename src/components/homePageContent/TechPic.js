@@ -5,7 +5,9 @@ import { delayBetweenLogos } from "../../config";
 const colors = ["#cf92c3", "#8ac897", "#ffe96a", "#d5eeff", "#f89e6d"];
 
 const pickRandom = (array) => {
-  return array[Math.floor(Math.random() * array.length)];
+  const arrayPosition = Math.floor(Math.random() * array.length);
+  // The
+  return { value: array[arrayPosition], arrayPosition };
 };
 
 export const TechPic = () => {
@@ -13,9 +15,22 @@ export const TechPic = () => {
   // their respective arrays.
   const [currentLogo, setCurrentLogo] = useState(pickRandom(logos));
   const [currentColor, setCurrentColor] = useState(pickRandom(colors));
+
   const changeLogoAndColor = () => {
-    setCurrentLogo(pickRandom(logos));
-    setCurrentColor(pickRandom(colors));
+    let newLogo = pickRandom(logos);
+    let newColor = pickRandom(colors);
+
+    // New logo and color are regenerated if they are the same as the last.
+    // Avoids a logo or color appearing in sequence in the animation.
+    while (newLogo.arrayPosition === currentLogo.arrayPosition) {
+      newLogo = pickRandom(logos);
+    }
+    while (newColor.arrayPosition === currentColor.arrayPosition) {
+      newColor = pickRandom(colors);
+    }
+
+    setCurrentLogo(newLogo);
+    setCurrentColor(newColor);
   };
 
   // Every x interval the useEffect set a new logo and color in state,
@@ -25,11 +40,15 @@ export const TechPic = () => {
       changeLogoAndColor();
     }, delayBetweenLogos);
     return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentLogo]);
 
   return (
-    <div className="logo-container" style={{ backgroundColor: currentColor }}>
-      {currentLogo}
+    <div
+      className="logo-container"
+      style={{ backgroundColor: currentColor.value }}
+    >
+      {currentLogo.value()}
     </div>
   );
 };
