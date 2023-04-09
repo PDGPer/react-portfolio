@@ -3,7 +3,7 @@ export const TechText = () => {
   return (
     <div>
       <p className="text">
-        <span className="code-purple">const knownTechs</span> =<br></br>[
+        <span className="code-purple">const knownTech</span> =<br></br>[
         'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Redux',
         'Redux-Saga', 'REST', 'Azure Devops', 'Git', 'NPM', Yarn, 'Material UI',
         ...others ]<br></br>

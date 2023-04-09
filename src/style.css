@@ -1,9 +1,6 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
-.image-gallery-content .image-gallery-slide .image-gallery-image {
-  max-height: none;
-}
-
+/* -------------------- HTML ELEMENTS -------------------- */
 html {
   font-size: 10px;
 }
@@ -34,9 +31,31 @@ a:hover {
   color: #ff9b65;
 }
 
-.code-container {
-  padding: 3vw;
+/* -------------------- TYPOGRAPHY: REGULAR TEXT -------------------- */
+
+.text {
+  font-family: Consolas, Menlo, Monaco, "Droid Sans Mono", monospace;
+  margin: 7%;
+  font-size: 5vw;
+  line-height: 9vw;
+  color: #cbd3de;
 }
+
+@media only screen and (min-width: 700px) {
+  .text {
+    font-size: 2vw;
+    line-height: 4vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .text {
+    font-size: 24px;
+    line-height: 48px;
+  }
+}
+
+/* -------------------- TYPOGRAPHY: "CODE" TEXT -------------------- */
 
 .code {
   color: #8ac897;
@@ -60,41 +79,7 @@ a:hover {
   }
 }
 
-.text {
-  font-family: Consolas, Menlo, Monaco, "Droid Sans Mono", monospace;
-  margin: 7%;
-  font-size: 5vw;
-  line-height: 9vw;
-  color: #cbd3de;
-}
-
-@media only screen and (min-width: 700px) {
-  .max-width {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .text {
-    font-size: 2vw;
-    line-height: 4vw;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .text {
-    font-size: 24px;
-    line-height: 48px;
-  }
-}
-
-.dark-background {
-  background-color: #1b2225;
-}
-
-.dark-background-alt {
-  background-color: #121a1d;
-}
+/* -------------------- CONTAINERS: GENERAL -------------------- */
 
 .main-column-container {
   max-width: 1200px;
@@ -129,6 +114,14 @@ a:hover {
   }
 }
 
+@media only screen and (min-width: 700px) {
+  .max-width {
+    width: 100%;
+  }
+}
+
+/* -------------------- CONTAINERS: TEXT -------------------- */
+
 .text-block {
   padding-top: 0;
   padding-bottom: 8vw;
@@ -140,6 +133,14 @@ a:hover {
     padding-bottom: 0;
   }
 }
+
+/* -------------------- CONTAINERS: CODE -------------------- */
+
+.code-container {
+  padding: 3vw;
+}
+
+/* -------------------- CONTAINERS: LOGOS -------------------- */
 
 .logo-container {
   aspect-ratio: 1;
@@ -165,11 +166,23 @@ a:hover {
   align-items: flex-end;
 }
 
+/* -------------------- LOGOS -------------------- */
+
 .logo {
   width: 30%;
   max-width: 200px;
   max-height: 200px;
   filter: grayscale(30%);
+}
+
+/* -------------------- COLORS -------------------- */
+
+.dark-background {
+  background-color: #1b2225;
+}
+
+.dark-background-alt {
+  background-color: #121a1d;
 }
 
 .portrait {
@@ -208,11 +221,13 @@ a:hover {
   filter: brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6);
 }
 
-.Typewriter__cursor {
-  display: none;
-}
+/* -------------------- PORTRAIT ANIMATION -------------------- */
 
-/* ANIMATION */
+.animation-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
 .foreground-animation {
   width: 100%;
@@ -223,18 +238,6 @@ a:hover {
   background: linear-gradient(-45deg, #cf92c3, #c055ab, #539db7, #d5eeff);
   background-size: 400% 400%;
   animation: gradient 30s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .background-animation {
@@ -257,4 +260,12 @@ a:hover {
   }
 }
 
-/* const colors = ["#cf92c3", "#8ac897", "#ffe96a", "#d5eeff", "#f89e6d"]; */
+/* -------------------- OTHERS -------------------- */
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: none;
+}
+
+.Typewriter__cursor {
+  display: none;
+}
