@@ -346,7 +346,7 @@ const WordPressLogo = () => {
 
 export const Portrait = () => {
   return (
-    <div style={{ position: "relative", maxHeight: "600px" }}>
+    <div style={{ position: "relative", width: "100%", height: "100%" }}>
       <div className="foreground-animation" />
       <svg
         width="100%"
