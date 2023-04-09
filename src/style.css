@@ -130,7 +130,7 @@ a:hover {
 }
 
 .text-block {
-  padding-top: 8vw;
+  padding-top: 0;
   padding-bottom: 8vw;
 }
 
@@ -214,7 +214,30 @@ a:hover {
 
 /* ANIMATION */
 
-.animation {
+.foreground-animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  mix-blend-mode: saturation;
+  opacity: 0.2;
+  background: linear-gradient(-45deg, #d5eeff, #c055ab, #cf92c3);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.background-animation {
   width: 100%;
   height: 100%;
   background: linear-gradient(-45deg, #cf92c3, #c055ab, #539db7, #d5eeff);
