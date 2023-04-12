@@ -18,6 +18,10 @@ export const ProfileText = () => {
         {"}"}
         <br></br>
         <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
+          // [blog]
+        </a>
+        <br></br>
+        <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
           // [github ↗]
         </a>
         <br></br>
