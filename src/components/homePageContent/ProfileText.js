@@ -17,9 +17,9 @@ export const ProfileText = () => {
         &nbsp;&nbsp;languages: [ EN, PT, ES ]<br></br>
         {"}"}
         <br></br>
-        <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
+        {/* <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
           // [blog]
-        </a>
+        </a> */}
         <br></br>
         <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
           // [github ↗]

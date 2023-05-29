@@ -5,9 +5,9 @@ export const Links = () => {
   return (
     <div>
       <p className="text max-width">
-        <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
+        {/* <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
           // [blog]{" "}
-        </a>
+        </a> */}
         <a href="https://github.com/PDGPer" target="_blank" rel="noreferrer">
           [github&nbsp;↗]{" "}
         </a>
