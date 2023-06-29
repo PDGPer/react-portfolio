@@ -403,7 +403,7 @@ const Year0 = () => {
                 as a FE dev. What was on the other side of the forest? An
                 adventure for another day. My Year 1. But if you thought
                 starting to learn the stuff was a pain, be prepared for things
-                to get even crazier.
+                to get really crazy.
             </p>
         </BlogTemplate>
     );
