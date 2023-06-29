@@ -16,9 +16,9 @@ const Year0 = () => {
                 You stand at the edge of a great forest. It stretches out into
                 the horizon, seemingly never-ending. Every few paces there is a
                 plaque hanging from a branch. They are of every shape and
-                material imaginable, same for their lettering. They are however
-                almost identical in their message: "Learn to code!" — if not for
-                the fact that some have spelling errors.
+                material imaginable, same for their lettering. However, their
+                message is almost always identical: "Learn to code!" — if not
+                for the fact that some have spelling errors.
             </p>
             <p>
                 Underneath each plaque there is a path. Some look half decent,
@@ -31,10 +31,16 @@ const Year0 = () => {
                 self-learner. Chance has brought you to the same point in space
                 that I once occupied. Consider this text the equivalent of a
                 bunch of loose papers nailed to a pine tree at the edge of the
-                forest. I have made my way back from the other side of the
-                frontend (FE) web development path and left this here, in the
-                hope that it might help another clueless traveller such as I
-                once was.
+                forest. I have made my way back from the other side of the{" "}
+                <a
+                    href="https://roadmap.sh/frontend"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    frontend (FE) web development path
+                </a>{" "}
+                and left this here, in the hope that it might help another
+                clueless traveller such as I once was.
             </p>
             <p>
                 First, take heart. You already carry some of the tools that will
@@ -96,7 +102,7 @@ const Year0 = () => {
                 What else have you got in your bag? Is that some 'maths' residue
                 I see in there? Don't worry, if you're just learning FE web dev,
                 it will probably suffice for now. It would be a different matter
-                if you were learning Machine Learning and other such dark
+                if you were going for Machine Learning and other such dark
                 magics. But even a mediocre math student such as myself could
                 make do with whatever was still bouncing around in my noggin two
                 decades removed from learning it in high school. So no worries
@@ -236,7 +242,7 @@ const Year0 = () => {
                 such things are unconsciously filed under "everyone knows that",
                 and skipped. But people can get stuck on the minutest of things
                 and discouraged. It's only with the greatest of teachers that
-                you get a constant consideration for what is going on in the
+                you get a constant consideration for what is going on inside the
                 mind of the students so that no possible doubt can sneak by
                 unexamined.
             </p>
@@ -288,17 +294,17 @@ const Year0 = () => {
                 >
                     Eduardo Vedes
                 </a>
-                . No only did he write back a very helpful reply, but also
-                offered to mentor me. Though typically a mentor will also help
-                you with particular technical matters, their real value is in
-                helping you find the shortest route out of the forest and into
-                the place where you want to be. After all, they've already
-                walked it.
+                . Not only did he write back a very helpful reply after I
+                contacted him, but also offered to mentor me. Though typically a
+                mentor will also assist you with particular technical matters,
+                their real value is in helping you find the shortest route out
+                of the forest and into the place where you want to be. After
+                all, they've already walked it.
             </p>
             <p>
                 I focused on learning React on his recommendation, as it gave me
                 the best chances of employability. He also gave a list of books
-                to read, the most immediately helpful was probably{" "}
+                to read, the most immediately helpful of which was probably{" "}
                 <a
                     href="https://eloquentjavascript.net/"
                     target="_blank"
@@ -340,7 +346,7 @@ const Year0 = () => {
                 good enough to get me started and pass the fCC course materials.
                 The final projects that fCC recommends were particularly
                 important to affix everything into place, along with their take
-                home projects under their interview prep materials.
+                home projects under interview prep materials.
             </p>
             <p>
                 Then luck struck again and I managed to land my first job on the
@@ -356,14 +362,14 @@ const Year0 = () => {
                 exactly falling from the trees when I got in, and even junior
                 positions were regularly mobbed by hundreds of candidates. The
                 best strategy is often to already have a good relationship with
-                someone that can put in a good word on you behalf when something
-                pops up.
+                someone that can put in a good word on your behalf when
+                something pops up.
             </p>
             <p>
-                I empathize with all of you that prefer the company of your own
+                I empathize with all of you who prefer the company of your own
                 thoughts. But in the context of coding, being sociable probably
                 doesn't mean going out clubbing. You will be in the company of
-                other technology loving nerds who, like you, enjoy discussing{" "}
+                other technology loving nerds who also enjoy discussing{" "}
                 <a
                     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getYear"
                     target="_blank"
