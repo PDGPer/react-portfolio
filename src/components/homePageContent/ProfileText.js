@@ -13,7 +13,7 @@ export const ProfileText = () => {
                 <br></br>
                 &nbsp;&nbsp;role: 'Frontend Developer',
                 <br></br>
-                &nbsp;&nbsp;location: 'York, UK',
+                &nbsp;&nbsp;location: 'Lewes, UK',
                 <br></br>
                 &nbsp;&nbsp;languages: [ EN, PT, ES ]<br></br>
                 {"}"}
